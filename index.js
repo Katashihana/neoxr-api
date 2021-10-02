@@ -7,18 +7,18 @@ global.apikey = [ 'neoxr' ] // ApiKey
 global.status = {
 	query: {
         creator: global.creator,
-		status: false,
+	status: false,
         msg: 'Missing \'q\' parameter!'
     },
     url: {
         creator: global.creator,
-		status: false,
-		msg: 'Missing \'url\' parameter!'
+	status: false,
+	msg: 'Missing \'url\' parameter!'
     },
     apikey: {
         creator: global.creator,
-		status: false,
-		msg: 'Missing \'apikey\' parameter!'
+	status: false,
+	msg: 'Missing \'apikey\' parameter!'
     },
     invalidKey: {
         creator: global.creator,
@@ -47,7 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', indexRouter)
 app.use('/api', apiRouter)
 app.get('*', function(req, res){
-	res.status(404).json(global.status.error)
+    res.status(404).json(global.status.error)
 })
 
 app.listen(PORT, () => console.log(`Server is running in port ${PORT}`))
