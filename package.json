@@ -1,5 +1,5 @@
 {
-  "name": "rest-api-web",
+  "name": "neoxr-api",
   "version": "1.0.0",
   "description": "Base Rest Api",
   "main": "index.js",
