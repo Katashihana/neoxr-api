@@ -1,0 +1,36 @@
+{
+  "name": "rest-api-web",
+  "version": "1.0.0",
+  "description": "Base Rest Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neoxr/rest-api-web.git"
+  },
+  "keywords": [
+    "rest-api",
+    "web-api"
+  ],
+  "author": "Wildan Izzudin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neoxr/rest-api-web/issues"
+  },
+  "homepage": "https://github.com/neoxr/rest-api-web#readme",
+  "dependencies": {
+    "cheerio": "~1.0.0-rc.5",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "html-entities": "~2.3.2",
+    "jsdom": "~17.0.0",
+    "morgan": "~1.9.1",
+    "node-fetch": "~2.6.1",
+    "path": "^0.12.7",
+    "serve-favicon": "~2.5.0",
+    "yt-search": "~2.10.0"
+  }
+}

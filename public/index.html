@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <title> Neoxr's API </title>
+    <meta name="description" content="Free Rest API for various purposes, use neoxr as apikey.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!-- Facebook -->
+    <meta property="og:title" content="Wildan Izzudin" />
+    <meta property="og:url" content="https://api.neoxr.eu.org" />
+    <meta property="og:site_name" content="Neoxr's API" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Free Rest API for various purposes, use neoxr as apikey." />
+    <meta property="og:image" content="/image/logo.png" />
+    <!-- CSS -->
+    <link href='/css/styles.css' rel='stylesheet'>
+    <link href='/css/animate.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="animated strobe"> NEOXR API </h1>
+        <div class="description">
+            Free Rest API for various purposes, use <b>neoxr</b> as apikey.</a>
+        </div>
+        <div class="controls">
+            <form>
+                <div class="select">
+                    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                     <option value="" selected disabled>--- API LIST ---</option>
+                     <option value="/api/music?q=drxgs&apikey=neoxr">Music</option>
+                     <option value="/api/video?q=drxgs&apikey=neoxr">Video</option>
+                     <option value="/api/yta?url=https://youtu.be/SRQmwK8Z5Nw&apikey=neoxr">Youtube MP3</option>
+                     <option value="/api/ytv?url=https://youtu.be/SRQmwK8Z5Nw&apikey=neoxr">Youtube MP4</option>
+                     <option value="/api/yts?q=drxgs&apikey=neoxr">Youtube Search</option>
+                  </select>
+                </div>
+                <button disabled>RESULT!</button>
+            </form>
+        </div>
+        <div class="links">
+            <a href="https://github.com/neoxr/neoxr-api">Made by <b>Wildan Izzudin</b></a>
+            <span class="divider"></span>
+        </div>
+    </div>
+    <iframe src="/music/song.mp3" allow="autoplay" style="display:none"></iframe>
+</body>
+
+</html>
