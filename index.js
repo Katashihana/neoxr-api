@@ -3,7 +3,7 @@ let indexRouter = require('./routes/index'), apiRouter = require('./routes/api')
 let PORT = process.env.PORT || 8080
 
 global.creator = '@neoxrs – Wildan Izzudin'
-global.apikey = [ 'neoxr' ] // ApiKey
+global.apikey = [ 'Katashi' ] // ApiKey
 global.status = {
 	query: {
         creator: global.creator,
