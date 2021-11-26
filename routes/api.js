@@ -1,12 +1,12 @@
-let express = require('express'), router = express.Router(), yt = require('../lib/yt')
+let express = require('express'), router = express.Router(), yt = require('../lib/search')
 
-router.get('/music', async (req, res) => {
-	let q = req.query.q
+router.get('/palingmurah', async (req, res) => {
+	let produk = req.query.produk
 	let apikey = req.query.apikey
 	if (!q) return res.json(global.status.query)
 	if (!apikey) return res.json(global.status.apikey)
 	if (!global.apikey.includes(apikey)) return res.json(global.status.invalidKey)
-	let result = await yt.music(q)
+	let result = await search.palingmurah_(produk)
 	res.header('Content-Type: application/json')
 	res.type('json').send(JSON.stringify(result, null, 2))
 })
